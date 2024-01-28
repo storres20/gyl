@@ -9,7 +9,7 @@ export default function Navbar() {
   }
 
   return (
-    <div>
+    <div className="sticky top-0 z-10">
       {/* navbar goes here */}
       <nav className="bg-gray-100">
         <div className="max-w-6xl mx-auto px-4">
