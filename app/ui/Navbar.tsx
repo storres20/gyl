@@ -35,7 +35,7 @@ export default function Navbar() {
                       d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z"
                     />
                   </svg>
-                  <span className="font-bold">GyL</span>
+                  <span className="font-bold">Gutierrez y Leon</span>
                 </a>
               </div>
               {/* primary nav */}
@@ -64,7 +64,7 @@ export default function Navbar() {
               </a>
               <a
                 href="#"
-                className="py-2 px-3 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded transition duration-300"
+                className="py-2 px-3 bg-red-400 hover:bg-red-700 text-white rounded transition duration-300"
               >
                 Signup
               </a>
@@ -114,9 +114,9 @@ export default function Navbar() {
       </nav>
 
       {/* content goes here */}
-      <div className="py-32 text-center">
+      {/* <div className="py-32 text-center">
         <h2 className="font-extrabold text-4xl">Under Construction!</h2>
-      </div>
+      </div> */}
     </div>
   )
 }
