@@ -40,9 +40,11 @@ export default function Ofrecemos() {
             {list.map((item) => (
               <li
                 key={item.id}
-                className={`p-4 mb-4 bg-slate-400 hover:bg-blue-400 cursor-pointer ${
-                  selectedItem.id === item.id ? 'text-white bg-blue-400' : ''
-                } text-center`}
+                className={`p-4 mb-4 bg-slate-400 hover:bg-red-400 cursor-pointer ${
+                  selectedItem.id === item.id
+                    ? 'text-white bg-red-500 font-bold'
+                    : ''
+                } text-center rounded-lg`}
                 onClick={() => setSelectedItem(item)}
               >
                 {item.col}
