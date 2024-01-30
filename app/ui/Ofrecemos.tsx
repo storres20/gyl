@@ -32,7 +32,7 @@ export default function Ofrecemos() {
   const [selectedItem, setSelectedItem] = useState(list[0])
 
   return (
-    <div className="p-12 lg:px-32 lg:text-2xl">
+    <div className="p-12 lg:px-32 lg:text-xl">
       <h2 className="text-red-500 font-bold pb-10">QUE OFRECEMOS</h2>
       <div className="flex flex-col lg:flex-row lg:gap-10">
         <div className="lg:w-1/2">
@@ -40,11 +40,11 @@ export default function Ofrecemos() {
             {list.map((item) => (
               <li
                 key={item.id}
-                className={`p-4 mb-4 bg-slate-400 hover:bg-red-400 cursor-pointer ${
+                className={`p-4 mb-4 hover:bg-red-400 cursor-pointer text-center rounded-lg ${
                   selectedItem.id === item.id
                     ? 'text-white bg-red-500 font-bold'
-                    : ''
-                } text-center rounded-lg`}
+                    : 'bg-slate-400'
+                } `}
                 onClick={() => setSelectedItem(item)}
               >
                 {item.col}
@@ -54,7 +54,9 @@ export default function Ofrecemos() {
         </div>
         <div className="lg:w-1/2">
           <ul>
-            <li className="mb-4 text-justify">{selectedItem.content}</li>
+            <li className="mb-4 p-6 rounded-lg text-justify bg-slate-200">
+              {selectedItem.content}
+            </li>
           </ul>
         </div>
       </div>
